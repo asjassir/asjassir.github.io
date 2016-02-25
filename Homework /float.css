@@ -1,0 +1,55 @@
+.wrapper {
+  padding: 20px;
+  margin: auto;
+  border: 1px solid #ff0000;
+
+}
+.header {
+width: 80%;
+text-align: center;
+background: #ff8888;
+padding: 5%;
+margin: 5%;
+float:left;
+}
+
+  .left {
+ width: 13.33%;
+ text-align: center;
+ background-color: #ff8888;
+ float: left;
+ margin: 5%;
+ padding: 5%;
+ box-shadow: 5px 5px 5px yellow;
+  }
+
+  .center {
+    width: 13.33%;
+    text-align: center;
+    background-color: #ff8888;
+    float: left;
+    margin: 5%;
+    padding: 5%;
+  }
+
+  .right {
+    text-align:center;
+    width: 13.33%;
+    background-color: #ff8888;
+    float: left;
+    margin: 5%;
+    padding: 5%;
+  }
+
+  .quarter {
+    width: 5%;
+    background-color: #ff8888;
+    float: left;
+    margin: 5%;
+    padding: 5%;
+  }
+
+
+  .clear {
+    clear: both;
+  }

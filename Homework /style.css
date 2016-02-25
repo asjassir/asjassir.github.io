@@ -1,0 +1,44 @@
+body {
+  background-image: url("images/background.png");
+  font-family: 'Arial', sans-serif;
+  background-color: #red;
+
+}
+
+.wrapper {
+  width: 50%;
+  margin: 100px auto;
+  background-color: white;
+  padding: 10px;
+  margin:
+}
+.awesomeness {
+  color: #44FF33;
+}
+#directions {
+  color: #ff0088;
+//# ids
+// . classes
+// direct are tags
+}
+
+.awesomeness .awesome {
+  color: #0000FF;
+}
+
+.newcolors {
+  color: blue;
+}
+
+.fatcolor {
+  color: red;
+
+}
+
+.gramcolor {
+  color: green;
+}
+h2 {
+  color: #e7642c;
+  font-family: 'Slabo 27px', serif;
+}
