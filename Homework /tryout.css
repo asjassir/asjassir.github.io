@@ -1,0 +1,27 @@
+body {
+  width: 80%;
+  margin: auto;
+  font-family: "Myriad Pro";
+
+}
+#content {overflow: auto;}
+#feature, #footer {
+  margin: 1%;}
+.column1, .column2, .column3 {
+  width: 31.3%;
+  float:left;
+  margin: 2%;
+}
+.column1, .column2, .column3 {
+  li {
+    display: inline;
+    padding: 0.5em;}
+  #footer {
+    background-color: #efefef;
+    padding: 0.5em 0;
+  }
+  #feature, .article {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #efefef;
+  }
