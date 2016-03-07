@@ -11,6 +11,7 @@ body {
   background-color: white;
   color: #9d787b;
 }
+
 .mainarea {
   width: 900px;
   margin: auto;
@@ -19,6 +20,7 @@ body {
  figure {
    margin: 5%;
 }
+
 figcaption{
 font-size: 15px;
 width: 300px;
@@ -64,6 +66,7 @@ color: white;
   color: black;
   font-size: 18px;
 }
+
 .one {
   margin-left: 10%;
   margin-right: 10%;
@@ -104,8 +107,12 @@ color: white;
 }
 
 @media (max-width: 420px) {
-  .header, .one, .two, .footnote {
+  .header, .one, .two, .footnote, .figcaption, .figure, .body, .h2, .mainarea {
     width: 92%;
 
   }
+}
+
+.clear {
+  clear: both;
 }
