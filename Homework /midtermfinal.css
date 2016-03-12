@@ -13,10 +13,19 @@ body {
 }
 
 .mainarea {
-  width: 900px;
+  width: 200px;
   margin: auto;
+  float: left;
+
 
 }
+
+.footnotesections, .footnotesections2, .footnotesections3 {
+  width: 333px;
+  height: 50px;
+  bgcolor: #e7ecec
+}
+
  figure {
    margin: 5%;
 }
@@ -51,13 +60,19 @@ margin: 5%;
 color: white;
 
 }
+.headline {
+  width: 100px;
+  float: left;
+  margin: auto;
+}
 .newcolors {
   height: 150px;
-  width: 400px;
+  width: 100px;
   color: black;
   margin-left: 30px;
   margin-right: 30px;
   font-size: 40px;
+  float: left;
   border: 10px dashed #e7ecec;
 
 }
@@ -65,6 +80,8 @@ color: white;
 .paragraph {
   color: black;
   font-size: 18px;
+  width: 100px;
+  float: left;
 }
 
 .one {
@@ -75,6 +92,8 @@ color: white;
   padding-top: 2px;
   background-color: #d0d0d0;
   font-size: 20px;
+  width: 100px;
+  float: left;
 }
 
 .two {
