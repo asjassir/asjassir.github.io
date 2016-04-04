@@ -1,0 +1,52 @@
+<html>
+<head>
+<link href="elements.css" rel="stylesheet">
+
+<SCRIPT LANGUAGE = "JavaScript">
+
+function create(form) {
+if (confirm("This is your mad libs!")) {
+storyForm = window.open("","Madlib");
+with (storyForm.document) {
+writeln ("<P><b> The other day I woke up very scared I " + form.box2.value + " and knocked on my roomates door. She was eating  " + form.box3.value + " so I asked if I could join her. We then watched" + form.box4.value + "  for a good while until we both felt asleep. Next morning we woke up at " + form.box5.value + " and walked to school together.</b>");
+
+      }
+   }
+}
+
+</SCRIPT>
+
+</head>
+<body>
+
+<FORM>
+
+
+
+<b>Give a verb:</b>
+
+<INPUT TYPE="text" NAME="box2"><BR>
+
+
+<b>What is your favorite food?</b>
+
+<INPUT TYPE="text" NAME="box3" ><BR>
+
+<b>What is your favorite movie?</b>
+
+<INPUT TYPE="text" NAME="box4"><BR>
+
+<b>What time do you normally wake up?</b>
+
+<INPUT TYPE="text" NAME="box5"><BR>
+
+
+
+
+<BR></B>
+<INPUT TYPE = "button" VALUE="Create Story" onClick = "create(this.form)">
+</FORM>
+
+
+
+</body>
