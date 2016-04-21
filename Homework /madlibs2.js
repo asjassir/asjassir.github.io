@@ -4,10 +4,10 @@ $(function() {
 
   $("#btn-click").click(function(e) {
 
-    $(".myArtist").empty().append($("input.myArtist").val());
-    $(".myInstrument").empty().append($("input.myInstrument").val());
-    $(".myIntrument2").empty().append($("input.myInstrument2").val());
-    $(".myParty").empty().append($("input.myParty").val());
+    $(".artist").empty().append($("#artist").val());
+    $(".instrument").empty().append($("#instrument").val());
+    $(".instrument2").empty().append($("#instrument2").val());
+    $(".party").empty().append($("#party").val());
 
   });
 
