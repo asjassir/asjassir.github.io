@@ -1,9 +1,8 @@
-@import "compass/css3";
-
-@import "compass/css3";
-@import "compass/reset";
-*{
-	@include box-sizing(border-box);
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body{
@@ -14,60 +13,82 @@ body{
 	padding-top: 30px;
 	margin: auto;
 
-	@include transition(padding-top .5s ease);
+	transition: padding-top .5s ease;
 }
-.nav{
 
+/*** NAV ***/
+
+.nav {
+	position: fixed;
+	z-index: 1000;
 	width: 100%;
-	height: 200px;
 	background-color: white;
 	text-align: left;
-	position: relative;
-	position: fixed;
-	font-size: 30px;
 	top: 0;
-	overflow: hidden;
-	@include transition(all .5s ease);
 }
-
-.nav2{
-	background-color: white;
-	font-size: 20px;
-	text-align: right;
-	position: right;
-	position: fixed;
-	width: 200px;
-	height: 50px;
-	margin-left: 1600px;
-	margin-top: 0;
-		@include transition(all .3s ease);
-}
-
-.nav3{
-
-	background-color: white;
-	font-size: 50px;
-	text-align: right;
-	position: right;
-	position: fixed;
-	width: 1000px;
-	height: 50px;
-	margin-left: 500px;
-	margin-top: 10px;
-		@include transition(all .3s ease);
-
-}
-	h1{
-		font-size: 40px;
-		color: #fff;
-		line-height: 230px;
-		text-transform: uppercase;
-		font-weight: 100;
-		@include transition(all .3s ease);
+	.nav a {
+		text-decoration: none;
 	}
 
+	.logo {
+		float:left;
+		witdh:80px;
+		height:100px;
+	}
 
+	.sub-nav, .main-nav {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.sub-nav{
+		font-size: 20px;
+		float: right;
+	}
+
+		.sub-nav li {
+			background-color: #e5e5e5;
+			margin: 10px;
+		}
+		.sub-nav a {
+			color: black;
+		}
+		.search {
+			border: 0;
+			background-color: #e5e5e5;
+		}
+
+	.main-nav{
+		font-size: 30px;
+		text-align: center;
+		clear: both;
+	}
+
+		.main-nav li {
+			display: inline-block;
+			background-color: #fff100;
+			font-family: Pt Sans, sans-serif;
+			margin: 20px;
+		}
+		.main-nav a {
+			color: black;
+
+			    position: relative;
+			    left: 20px;
+		}
+
+
+.whatever {
+	color: #FFF;
+	transition: all .5s ease;
 }
+
+.whatever:hover {
+	color: #DDD;
+}
+
+/*** TYPOGRAPHY ***/
 
 h1{
 	font-size: 40px;
@@ -75,8 +96,19 @@ h1{
 	line-height: 230px;
 	text-transform: uppercase;
 	font-weight: 100;
-	@include transition(all .3s ease);
 }
+
+
+h1{
+	font-size: 40px;
+	color: #fff;
+	line-height: 230px;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+
+
 h2{
 	font-size: 34px;
 	text-transform: uppercase;
@@ -85,20 +117,14 @@ h2{
 	color: yellow;
 }
 
-.newletter{
-	font-size: 25px;
-	text-transform: uppercase;
-	font-family: Pt Sans, sans-serif;
-	font-weight: 100;
-	line-height: 2;
-	color: yellow;
-	padding-left: 10px;
-}
 p{
 	margin-bottom: 2rem;
 	line-height: 2;
 	color: #7f8c8d;
 }
+
+/*** LAYOUT ***/
+
 .wrapper{
 	width: 1200px;
 	margin: 0 auto;
@@ -106,13 +132,6 @@ p{
 	padding: auto;
 }
 
-.mainarea{
-	width: 1200px;
-	margin: 0 auto;
-	font-family: Pt Sans, sans-serif;
-}
-
-}
 
 .footer{
 	width: 1200px:
@@ -128,20 +147,40 @@ section{
 	font-family: Pt Sans, sans-serif;
 	background-color: #fff;
 	opacity: 40%;
-	@include border-radius(4px);
-	@include box-shadow(0 1px 0 rgba(0,0,0,.2));
+	border-radius: 4px;
+	box-shadow: 0 1px 0 rgba(0,0,0,.2);
 }
 
+
+/*** SUBMIT ***/
+
+.newletter{
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: Pt Sans, sans-serif;
+	font-weight: 100;
+	line-height: 2;
+	color: yellow;
+	padding-left: 10px;
+}
+
+/*** ARTICLE ***/
+
+
+/*** HOME ***/
+
+
+
+
+
 /* Sticky Header Style */
-/* ---------------------------------------- */
+
 body.sticky-header{
+
 	padding-top: 100px;
 	header{
 		height: 60px;
 		background-color: rgba(52,152,219,.9);
-		h1{
-			@include scale(0);
-		}
 	}
 
 
