@@ -1,10 +1,14 @@
-$(function(){
-  $(window).scroll(function(){
-    var winTop = $(window).scrollTop();
-    if(winTop >= 30){
-      $("body").addClass("sticky-header");
-    }else{
-      $("body").removeClass("sticky-header");
-    }//if-else
-  });//win func.
-});//ready func.
+function myMove() {
+  var elem = document.getElementById("myAnimation");
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.top = pos + 'px';
+      elem.style.left = pos + 'px';
+    }
+  }
+}
